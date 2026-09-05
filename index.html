@@ -1,234 +1,119 @@
-/* --- Variables y Paleta Ejecutivo/Finanzas --- */
-:root {
-  --primary: #1e3a8a;          /* Azul Marino */
-  --primary-light: #3b82f6;    /* Azul brillante */
-  --accent: #d97706;         /* Dorado / Ocre elegante */
-  --text-main: #1f2937;       /* Gris oscuro para lectura */
-  --text-muted: #4b5563;      /* Gris medio */
-  --bg-body: #f8fafc;         /* Fondo suave */
-  --bg-card: #ffffff;
-  --bg-sidebar: #f1f5f9;      /* Lateral contrastado */
-  --border-color: #e2e8f0;
-  --radius: 12px;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - María Eva Blengio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* --- Reseteo Base --- */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <div class="cv-container">
+    
+    <!-- Columna Izquierda (Sidebar) -->
+    <aside class="sidebar">
+      
+      <!-- Contacto -->
+      <div class="sidebar-section">
+        <h3>Contacto</h3>
+        <div class="contact-info">
+          <p><strong>Email:</strong> [Tu Correo Electrónico]</p>
+          <p><strong>Teléfono:</strong> [Tu Número de Teléfono]</p>
+          <p><strong>Ubicación:</strong> Montevideo, Uruguay</p>
+        </div>
+      </div>
 
-body {
-  font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  color: var(--text-main);
-  background-color: var(--bg-body);
-  line-height: 1.6;
-  padding: 40px 15px;
-}
+      <!-- Idiomas -->
+      <div class="sidebar-section">
+        <h3>Idiomas</h3>
+        <div class="language-item">
+          <div class="language-name">Español</div>
+          <div class="language-level">Nativo</div>
+        </div>
+        <div class="language-item">
+          <div class="language-name">Alemán</div>
+          <div class="language-level">Nivel C1 (Avanzado / Fluido)</div>
+        </div>
+        <div class="language-item">
+          <div class="language-name">Inglés</div>
+          <div class="language-level">Nivel C1 (Avanzado / Fluido)</div>
+        </div>
+      </div>
 
-/* --- Contenedor Principal --- */
-.cv-container {
-  max-width: 900px;
-  margin: 0 auto;
-  background: var(--bg-card);
-  border-radius: var(--radius);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  overflow: hidden;
-  display: grid;
-  grid-template-columns: 290px 1fr;
-}
+      <!-- Aptitudes -->
+      <div class="sidebar-section">
+        <h3>Aptitudes y Competencias</h3>
+        <ul class="skills-list">
+          <li>Análisis financiero y pensamiento cuantitativo</li>
+          <li>Relaciones interpersonales, empatía y comunicación asertiva</li>
+          <li>Adaptabilidad, proactividad y resolución de desafíos</li>
+          <li>Gestión del tiempo y organización</li>
+          <li>Trabajo en entornos multiculturales y bilingües</li>
+        </ul>
+      </div>
 
-/* --- Columna Izquierda (Sidebar) --- */
-.sidebar {
-  background-color: var(--bg-sidebar);
-  padding: 40px 25px;
-  border-right: 1px solid var(--border-color);
-}
+    </aside>
 
-.sidebar-section {
-  margin-bottom: 30px;
-}
+    <!-- Columna Derecha (Principal) -->
+    <main class="main-content">
+      
+      <!-- Encabezado -->
+      <header class="header">
+        <h1>María Eva Blengio</h1>
+        <div class="location">Estudiante de Economía | Orientación en Finanzas</div>
+      </header>
 
-.sidebar h3 {
-  font-size: 0.95rem;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-  color: var(--primary);
-  margin-bottom: 15px;
-  font-weight: 700;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 5px;
-}
+      <!-- Perfil Profesional -->
+      <section>
+        <h2 class="section-title">Perfil Profesional</h2>
+        <p class="profile-summary">
+          Estudiante de tercer año de la Licenciatura en Economía en la Universidad de la República (UDELAR), con orientación en Finanzas. Destacada por una sólida capacidad analítica, alto compromiso y excelente disposición para el aprendizaje continuo y el trabajo en equipo. Posee un perfil dinámico, empático y proactivo, combinado con un dominio avanzado de idiomas (inglés y alemán C1) adquirido a través de una formación académica bilingüe. Cuenta con disponibilidad horaria flexible y adaptable a la jornada laboral.
+        </p>
+      </section>
 
-/* Datos de contacto */
-.contact-info p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 10px;
-  word-break: break-word;
-}
+      <!-- Experiencia Laboral -->
+      <section>
+        <h2 class="section-title">Experiencia Laboral</h2>
+        
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Auxiliar de Maestra – Sector Kinder</span>
+            <span class="item-date">Feb 2025 – Presente</span>
+          </div>
+          <div class="item-subtitle">Colegio Alemán de Montevideo</div>
+          <div class="item-description">
+            <ul>
+              <li>Asistencia en la gestión y organización del aula infantil.</li>
+              <li>Apoyo continuo en la atención y cuidado de los niños, fomentando un ambiente educativo positivo.</li>
+              <li>Colaboración activa con el equipo docente en la planificación de actividades diarias.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-/* Idiomas */
-.language-item {
-  margin-bottom: 12px;
-}
+      <!-- Educación -->
+      <section>
+        <h2 class="section-title">Educación</h2>
 
-.language-name {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--text-main);
-}
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Licenciatura en Economía (Orientación en Finanzas)</span>
+            <span class="item-date">En curso (3.er año)</span>
+          </div>
+          <div class="item-subtitle">Universidad de la República (UDELAR)</div>
+        </div>
 
-.language-level {
-  font-size: 0.85rem;
-  color: var(--primary);
-  font-weight: 500;
-}
+        <div class="item">
+          <div class="item-header">
+            <span class="item-title">Bachillerato Completo</span>
+          </div>
+          <div class="item-subtitle">Colegio Alemán de Montevideo</div>
+        </div>
+      </section>
 
-/* Aptitudes / Competencias */
-.skills-list {
-  list-style: none;
-}
+    </main>
 
-.skills-list li {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-  position: relative;
-  padding-left: 15px;
-}
+  </div>
 
-.skills-list li::before {
-  content: "•";
-  color: var(--accent);
-  font-weight: bold;
-  position: absolute;
-  left: 0;
-}
-
-/* --- Columna Derecha (Contenido Principal) --- */
-.main-content {
-  padding: 40px 35px;
-}
-
-.header {
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 20px;
-  margin-bottom: 25px;
-}
-
-.header h1 {
-  font-size: 2.2rem;
-  color: var(--primary);
-  font-weight: 800;
-  line-height: 1.1;
-}
-
-.header .location {
-  font-size: 1rem;
-  color: var(--text-muted);
-  margin-top: 5px;
-  font-weight: 500;
-}
-
-.profile-summary {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 30px;
-  text-align: justify;
-}
-
-.section-title {
-  font-size: 1.15rem;
-  color: var(--primary);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-}
-
-.section-title::after {
-  content: "";
-  flex: 1;
-  height: 1px;
-  background: var(--border-color);
-  margin-left: 12px;
-}
-
-/* --- Experiencia y Educación --- */
-.item {
-  margin-bottom: 25px;
-}
-
-.item-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-}
-
-.item-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  color: var(--text-main);
-}
-
-.item-subtitle {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: var(--primary-light);
-}
-
-.item-date {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  font-weight: 500;
-  background: #e2e8f0;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.item-description {
-  margin-top: 8px;
-}
-
-.item-description ul {
-  padding-left: 18px;
-}
-
-.item-description li {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 4px;
-}
-
-/* --- Adaptabilidad para Celulares --- */
-@media (max-width: 768px) {
-  body {
-    padding: 0;
-  }
-  .cv-container {
-    grid-template-columns: 1fr;
-    border-radius: 0;
-  }
-  .sidebar {
-    border-right: none;
-    border-bottom: 1px solid var(--border-color);
-  }
-}
-
-/* --- Formato para exportar a PDF (Ctrl + P) --- */
-@media print {
-  body {
-    background: white;
-    padding: 0;
-  }
-  .cv-container {
-    box-shadow: none;
-    max-width: 100%;
-  }
-}
+</body>
+</html>
